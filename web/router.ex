@@ -17,9 +17,9 @@ defmodule FirstPhoenixApp.Router do
   scope "/", FirstPhoenixApp do
     pipe_through :browser # Use the default browser stack
 
-    get "/",            PageController,  :index
-    get "/hello",       HelloController, :index
-    get "/hello/:name", HelloController, :show
+    get "/",            PageController,     :index
+    get "/flash",       PracticeController, :flash
+    get "/hello/:name", PracticeController, :hello
   end
 
   # Other scopes may use custom stacks.
