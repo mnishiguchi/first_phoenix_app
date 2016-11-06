@@ -1,3 +1,4 @@
+# http://www.phoenixframework.org/docs/adding-pages
 defmodule FirstPhoenixApp.Router do
   use FirstPhoenixApp.Web, :router
 
@@ -17,6 +18,7 @@ defmodule FirstPhoenixApp.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
+    get "/hello", HelloController, :index
   end
 
   # Other scopes may use custom stacks.
