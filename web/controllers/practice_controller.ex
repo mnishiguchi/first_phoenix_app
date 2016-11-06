@@ -1,6 +1,12 @@
 defmodule FirstPhoenixApp.PracticeController do
   use FirstPhoenixApp.Web, :controller
 
+  def assign(conn, _params) do
+    conn
+    |> assign(:message, "Welcome back!")
+    |> render("assign.html")
+  end
+
   def flash(conn, _params) do
     conn
     |> put_flash(:info, "This is a flash info from practice_controller#flash")
@@ -11,4 +17,5 @@ defmodule FirstPhoenixApp.PracticeController do
   def hello(conn, %{"name" => name}) do
     render(conn, "hello.html", name: name)
   end
+
 end

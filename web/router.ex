@@ -20,6 +20,7 @@ defmodule FirstPhoenixApp.Router do
     get "/",            PageController,     :index
     get "/flash",       PracticeController, :flash
     get "/hello/:name", PracticeController, :hello
+    get "/assign",      PracticeController, :assign
   end
 
   # Other scopes may use custom stacks.

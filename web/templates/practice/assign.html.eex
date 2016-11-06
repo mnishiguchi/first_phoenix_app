@@ -1,0 +1,6 @@
+<div class="jumbotron">
+  <h2>practice#assign</h2>
+  <p>
+    Message is "<%= @message %>"
+  </p>
+</div>
