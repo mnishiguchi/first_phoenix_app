@@ -17,12 +17,13 @@ defmodule FirstPhoenixApp.Router do
   scope "/", FirstPhoenixApp do
     pipe_through :browser # Use the default browser stack
 
-    get "/",            PageController,     :index
-    get "/assign",      PracticeController, :assign
-    get "/flash",       PracticeController, :flash
-    get "/hello/:name", PracticeController, :hello
-    get "/hello",       PracticeController, :hello
-    get "/plug",        PracticeController, :plug
+    get "/",                PageController,     :index
+    get "/assign",          PracticeController, :assign
+    get "/flash",           PracticeController, :flash
+    get "/hello/:name",     PracticeController, :hello
+    get "/hello",           PracticeController, :hello
+    get "/plug",            PracticeController, :plug
+    get "/name_json/:name", PracticeController, :name_json
   end
 
   # Other scopes may use custom stacks.

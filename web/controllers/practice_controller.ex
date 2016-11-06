@@ -24,6 +24,10 @@ defmodule FirstPhoenixApp.PracticeController do
     render(conn, "hello.html", name: name)
   end
 
+  def name_json(conn, %{"name" => name}) do
+    json(conn, %{name: name})
+  end
+
   defp assign_welcome_message(conn, msg) do
     assign(conn, :message, msg)
   end
