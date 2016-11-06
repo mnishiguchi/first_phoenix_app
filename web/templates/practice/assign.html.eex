@@ -3,4 +3,7 @@
   <p>
     Message is "<%= @message %>"
   </p>
+  <p>
+    Comment is "<%= @comment %>"
+  </p>
 </div>

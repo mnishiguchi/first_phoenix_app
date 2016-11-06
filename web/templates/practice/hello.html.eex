@@ -1,6 +1,6 @@
 <div class="jumbotron">
   <h2>practice#hello</h2>
   <p>
-    Hello, <%= @name %>
+    <%= @message %>, <%= @name %>
   </p>
 </div>
