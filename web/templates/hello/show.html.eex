@@ -1,0 +1,6 @@
+<div class="jumbotron">
+  <h2>hello#show</h2>
+  <p>
+    Hello, <%= @name %>
+  </p>
+</div>
